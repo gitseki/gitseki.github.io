@@ -42,7 +42,7 @@ li a:hover {
 
 #activity {
     text-align: center;
-    padding: 2em;
+    padding: 1.5em 2em 0em 2em;
     color: #313638;
     font-family: Abhaya Libre, 'Courier New', Courier, monospace;
 }
@@ -60,4 +60,21 @@ table {
     table-layout: fixed;
     width: 500px;
     height: 250px;
+}
+
+.about {
+  text-align: center;
+  font-family: Almarai, Arial, Helvetica, sans-serif;
+}
+
+.about h1 {
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+}
+
+.about p {
+  margin: auto;
+  max-width: 800px;
+  border-style: solid;
+  border-color: black;
 }
