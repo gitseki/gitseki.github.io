@@ -2,12 +2,33 @@
 <html>
 <head>
     <title>ballers on a budget</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p id="temp">loading temp data</p>
-    <p id="meow">loading meow data</p>
-    <script>team_name = "hackers"</script>
+
+    <ul>
+        <li><a class="active" href="#home">Ballers Incorporated</a></li>
+        <li><a target="_blank" href="https://etransfercenter.seas.ucla.edu/2023_hack/">UCLA HACK 2023</a></li>
+        <li><a target="_blank" href="./main.html">Mission Impossible</a></li>
+    </ul>
+
+    <div id="activity">
+    <h2>Mission Statistics</h2>
+    <h3>Status:</h3>
+    <table>
+        <tr>
+            <td>Temperature: <span id="temp"></span></td>
+            <td>Humidity: <span id="Humidity"></span><span>%</span></td>
+        </tr>
+        <tr>
+            <td>Air Quality: <span id="AirQuality"></span></td>
+            <td>S.S. Sensor: <span id="Distance"></span></td>
+        </tr>
+    </table>
+    </div>
+
+    <script>team_name = "Team13"</script>
     <script type="module" src="./communication.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
