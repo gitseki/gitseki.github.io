@@ -1,25 +1,25 @@
 # Ballers on a Budget
 
-## Comunication.js
+## BallersOnABudget_communication.js
 
 File provided by Austin.
 
-## main.html
+## BallersOnABudget_main.html
 
 Website that posts the data.
 
-## script.js
+## BallersOnABudget_DynamicWeb.js
 
 Check if data is sent from sensors.
 
-## style.css
+## BallersOnABudget_styles.css
 
 Design and style the website.
 
-## sketch_jul21b
+## BallersOnABudget_SensorCode.ino
 
 Arduino code file.
 
-## HackPulisher.h
+## BallersOnABudget_HackPublisher.h
 
 File provided by Austin.

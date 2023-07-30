@@ -31,7 +31,36 @@
 
     <div class="about">
         <h1>About Us</h1>
-        <p>bwoohahaha The cat (Felis catus) is a domestic species of small carnivorous mammal.[1][2] It is the only domesticated species in the family Felidae and is commonly referred to as the domestic cat or house cat to distinguish it from the wild members of the family.[4] Cats are commonly kept as house pets but can also be farm cats or feral cats; the feral cat ranges freely and avoids human contact.[5] Domestic cats are valued by humans for companionship and their ability to kill vermin. About 60 cat breeds are recognized by various cat registries.[6]</p>
+        <table>
+            <tr>
+                <th>CAD Designing</th>
+            </tr>
+            <tr>
+                <td>
+                    For the CAD portion of our project, we opted for a wooden chasis, mainly because testing and iterating with the laser cutter is significantly faster than 3D printing the same part. We began testing the properties of bendable plywood, and realized it would work well as a base. <br><img src="https://media.discordapp.net/attachments/1132441863132020756/1135299184224903279/20230729_212131.jpg?width=838&height=1118" alt=""><img src="https://media.discordapp.net/attachments/1132441863132020756/1135299184996667424/20230728_210015.jpg?width=838&height=1118" alt=""><img src="https://media.discordapp.net/attachments/1132441863132020756/1135299184635936828/20230729_212138.jpg?width=838&height=1118" alt=""><br>After a couple more iterations we reached our final design prototype
+                    The wood was sufficient for the hand portion of the project, but we also needed to use 3D prints to cover the fingers. We tried a couple designs until we reached the final model which threads the cable through the part rather than taping it to the inside. <br><img src="https://media.discordapp.net/attachments/1132441863132020756/1135299183482503248/20230729_212121.jpg?width=838&height=1118" alt=""><img src="https://media.discordapp.net/attachments/1132441863132020756/1135299183948091392/20230729_212111.jpg?width=838&height=1118" alt=""><img src="https://media.discordapp.net/attachments/1132441863132020756/1135299183184715816/20230730_113424.jpg?width=838&height=1118" alt=""><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Design Process</th>
+            </tr>
+            <tr>
+                <td>We also decided to not use a breadboard for our design, as it would not synergize well with the malleable wood base. Because of this, we needed to splice wires together to provide enough ground and power connections. This caused a series of strange issues, including varying sensor readings and some components not working altogether. We learned that bundling the wires and then sealing them with electrical tape to provide a layer of solid insulation, while also reinforcing the structure. 
+                    <br><img src="https://media.discordapp.net/attachments/1132441863132020756/1135306639751262258/20230729_220725.jpg?width=1544&height=1118" alt=""><br>Another important note to make about our iterative designs was ensuring our plans were realistic. On multiple occassions we had to "reality check" our timeline, forcing us to focus on the essentials rather than our ambitions. </td>
+            </tr>
+            <tr>
+                <th>Sensors and Writing the Code</th>
+            </tr>
+            <tr>
+                <td>
+                    It is very important to navigate away from fire, so we decided to use temperature and humidity sensors to help us detect if there is a fire ahead. Increasing temperature and decreasing humidity are good indications for a fire. Fire has a lot of air toxins, so to safely rescue engineers, we used a gas detector sensor to know and avoid those areas. Also, we implemented an ultrasonic sensor to navigate in the dark, and to detect trapped Bruin engineers. All the data will then be displayed in real time on the OLED to communicate with mission control.
+
+The code has three portions. The first is about reading value from sensors. The second is displaying the data on the OLED. The last is for sending the data to the website. Designing the code this way makes it easy to follow and debug.
+
+One problem we encountered is that we could not show both the temperature and humidity on the Serial Monitor. At first, we thought there might be something wrong with the code we wrote, but everything looked good after checking. So we turned to the hardware to see if there were any problems there. After checking all the connections and the sensor, we had some suspicions about the sensor. However, we checked with one group and they were able to make it work. At that time, we decided to look deeper in the software, and we found out some errors in the library we were using. Everything worked fine after modifying some code in the library.
+                </td>
+            </tr>
+        </table>
     </div>
 
     <script>team_name = "Team13"</script>
