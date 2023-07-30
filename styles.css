@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Almarai:wght@700&display=swap');
+/* Abhaya Libre, Almarai*/
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +30,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Abhaya Libre;
+  font-family: Abhaya Libre, Arial, Helvetica, sans-serif;
   font-size: xx-large;
 }
 
@@ -40,12 +42,22 @@ li a:hover {
 
 #activity {
     text-align: center;
-    padding: 5em;
+    padding: 2em;
+    color: #313638;
+    font-family: Abhaya Libre, 'Courier New', Courier, monospace;
+}
+
+.sTitle {
+    padding-bottom: 20px;
 }
 
 table {
+    font-family: Almarai, Arial, Helvetica, sans-serif;
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
     border-color: black;
+    table-layout: fixed;
+    width: 500px;
+    height: 250px;
 }

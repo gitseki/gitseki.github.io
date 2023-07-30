@@ -13,22 +13,31 @@
     </ul>
 
     <div id="activity">
-    <h2>Mission Statistics</h2>
-    <h3>Status:</h3>
-    <table>
-        <tr>
-            <td>Temperature: <span id="temp"></span></td>
-            <td>Humidity: <span id="Humidity"></span><span>%</span></td>
-        </tr>
-        <tr>
-            <td>Air Quality: <span id="AirQuality"></span></td>
-            <td>S.S. Sensor: <span id="Distance"></span></td>
-        </tr>
-    </table>
+        <div class="sTitle">
+            <h2>Mission Statistics</h2>
+            <h3>Status: <span id="activeorinactive"></span></h3>
+        </div>
+        <table>
+            <tr>
+                <td>Temperature: <span id="temp"></span><span> °C</span></td>
+                <td>Humidity: <span id="Humidity"></span><span>%</span></td>
+            </tr>
+            <tr>
+                <td>Air Quality: <span id="AirQuality"></span></td>
+                <td>S.S. Sensor: <span id="Distance"></span><span> cm</span></td>
+            </tr>
+        </table>
     </div>
+
+    <div id="like_button_container"></div>
 
     <script>team_name = "Team13"</script>
     <script type="module" src="./communication.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
     <script src="./script.js"></script>
+
 </body>
 </html>
